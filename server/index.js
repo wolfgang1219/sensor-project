@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const path = require("path");
 
 app.get("/temperature", (req, res) => {
 	res.send("24°C");
