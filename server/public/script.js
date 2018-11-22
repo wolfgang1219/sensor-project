@@ -15,15 +15,15 @@ $(document).ready(function() {
 			})
 			.catch(e => console.log("Oops, error", e))
 	};
-	$("#light_on").clock(() => {
+	$("#light_on").click(() => {
 		fetch('/on').then(response => response.text())
 			.then(data => {
 				console.log(data);
 			})
 			.catch(e => console.log("Oops, error", e))
 	})
-	$("#light_off").clock(() => {
-		fetch('/onff').then(response => response.text())
+	$("#light_off").click(() => {
+		fetch('/off').then(response => response.text())
 			.then(data => {
 				console.log(data);
 			})
