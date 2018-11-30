@@ -1,5 +1,5 @@
 const Gpio = require('onoff').Gpio;
-const led = new Gpio(0, 'out');
+const led = new Gpio(17, 'out');
 const light_control_on =()=>{
 	led.writeSync(1);
 }
